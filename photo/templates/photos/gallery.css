@@ -1,0 +1,191 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a i {
+  color: white;
+}
+
+/* BODY */
+body {
+  background-color: #040404;
+  color: white;
+  position: relative;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  padding: 64px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.date {
+  font-family: Apple Chancery;
+  font-size: 2.75rem;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+.hamburger {
+  font-size: 3.3rem;
+  margin-right: 25px;
+}
+
+/* MAIN */
+
+main {
+  padding: 44px 50px 30px 50px;
+  
+}
+
+.card {
+  max-height: 650px;
+  max-width: 500px;
+  height: 650px;
+  width: 480px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 180px;
+  gap: 40px;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* FOOTER */
+footer {
+  padding: 0px 50px 50px 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer button {
+  font-size: 2rem;
+  border: 4px solid white;
+  background: none;
+  color: inherit;
+  padding: 10px 24px 10px 24px;
+  border-radius: 2vw;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+footer .circle-slider {
+  display: flex;
+  gap: 12px;
+}
+
+footer .circle-slider .circle {
+  background: #aaa;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+footer .circle-slider .circle:first-child {
+  background: white;
+}
+
+footer .arrows {
+  font-size: 3rem;
+}
+
+footer .arrow {
+  border: none;
+  font-size: 3rem;
+}
+
+footer .arrows > :first-child {
+  transform: rotate(180deg);
+}
